@@ -10,7 +10,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Mock API server
 
-Run `npm run server` for mock json server. Navigate to `http://localhost:5000/`. You can change the port in package.json file `scripts:[server]`
+Run `npm run server` for mock json server. Navigate to `http://localhost:5000/`. You can change the port in package.json file `scripts:[server]` (make sure to also change the url in `task.service.ts`)
 
 ## Code scaffolding
 
