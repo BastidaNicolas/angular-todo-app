@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router'
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
+import { TasksComponent } from './components/tasks/tasks.component';
+import { TaskItemComponent } from './components/task-item/task-item.component';
 
 const routes: Routes = []
 
@@ -11,7 +13,9 @@ const routes: Routes = []
   declarations: [
     AppComponent,
     HeaderComponent,
-    ButtonComponent
+    ButtonComponent,
+    TasksComponent,
+    TaskItemComponent
   ],
   imports: [
     BrowserModule,
