@@ -1,1 +1,20 @@
-<p>add-task works!</p>
+<form class="mb-5 {{showAddTask ? 'block':'hidden'}}" (ngSubmit)="onSubmit()" >
+    <div class="flex flex-col mb-2">
+        <label for="title">Task:</label>
+        <input class="border px-1" type="text" name="title" id="title" placeholder="Add Task" required
+            [(ngModel)]="title">
+    </div>
+    <div class="flex flex-col mb-2">
+        <label for="time">Day & Time:</label>
+        <input class="border px-1" type="text" name="time" id="time" placeholder="Add Time and Day" required
+            [(ngModel)]="time">
+    </div>
+    <div class="flex justify-between items-center mb-2">
+        <label for="reminder">Set Reminder:</label>
+        <input class="border" type="checkbox" name="reminder" id="reminder" [(ngModel)]="reminder">
+    </div>
+
+    <button type="submit" value="save task"
+        class="px-3 py-2 rounded mb-2 w-full text-sm font-bold bg-green-600 active:bg-green-700 text-white">Save
+        Task</button>
+</form>

@@ -1,8 +1,8 @@
 <header class="flex items-center justify-between mb-5">
     <h1 class="text-3xl font-bold">{{title}}</h1>
     <app-button 
-        classStyle="bg-green-600 active:bg-green-700 text-white" 
-        text="Add Task"
+        classStyle="{{showAddTask ? 'bg-red-600 active:bg-red-700':'bg-green-600 active:bg-green-700'}} text-white" 
+        text="{{showAddTask ? 'Cancel':'Add Task'}}"
         (btnClick)="toggleAddTask()"
     ></app-button>
 </header>
