@@ -1,6 +1,6 @@
 # AngularTodoApp
 
-![alt text](https://imgur.com/1pVc4Av)
+![Screenshot_20220715_193919](https://user-images.githubusercontent.com/74965310/179321272-2869a8bb-e23c-44f2-850c-04b4acdcb129.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
 
