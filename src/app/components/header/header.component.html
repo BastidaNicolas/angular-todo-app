@@ -4,5 +4,6 @@
         classStyle="{{showAddTask ? 'bg-red-600 active:bg-red-700':'bg-green-600 active:bg-green-700'}} text-white" 
         text="{{showAddTask ? 'Cancel':'Add Task'}}"
         (btnClick)="toggleAddTask()"
+        *ngIf="hasRoute('/')"
     ></app-button>
 </header>
