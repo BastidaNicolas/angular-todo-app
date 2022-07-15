@@ -3,13 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router'
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ButtonComponent } from './components/button/button.component';
 
 const routes: Routes = []
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
