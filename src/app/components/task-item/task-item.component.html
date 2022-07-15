@@ -1,7 +1,13 @@
-<div class="px-4 py-2 border mb-2">
+<div class="px-4 py-2 border mb-2 hover:cursor-pointer" 
+    [ngClass]="{ 'border-l-green-600 border-l-4': task.reminder}"
+    (click)="onToggle(task)"
+>
     <h2 class="font-bold text-lg flex justify-between items-center" >
         {{task.title}}
-        <fa-icon [icon]="times" class="hover:cursor-pointer"></fa-icon>
+        <fa-icon 
+            [icon]="times" 
+            (click)="onDelete(task)"
+            ></fa-icon>
     </h2>
     <h3 class="text-sm" >
         {{task.time}}
