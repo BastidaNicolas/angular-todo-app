@@ -1,6 +1,7 @@
-<div class="px-4 py-2 border mb-2 hover:cursor-pointer	">
-    <h2 class="font-bold text-lg" >
+<div class="px-4 py-2 border mb-2">
+    <h2 class="font-bold text-lg flex justify-between items-center" >
         {{task.title}}
+        <fa-icon [icon]="times" class="hover:cursor-pointer"></fa-icon>
     </h2>
     <h3 class="text-sm" >
         {{task.time}}
